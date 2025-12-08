@@ -13,6 +13,8 @@ import {
   Dialog,
   OrganizationService, PersonService, PhoneService, ProblemService, ReferenceService, PrsnlService
 } from '@clinicaloffice/mpage-developer';
+import { Common } from './services/common';
+
 
 declare const VERSION: string;
 
@@ -31,6 +33,7 @@ declare const VERSION: string;
 export class App implements OnInit {
   public activatedRoute = inject(ActivatedRoute);
   public MPage = inject(MPageService);
+  public common = inject(common);
 
   public title: InputSignal<string> = input('default');
   public path: InputSignal<string> = input('path');
@@ -45,6 +48,7 @@ export class App implements OnInit {
 
     this.MPage.setMaxInstances(2, true, 'CHART', false);
 
+    this.common.initialLoad();
   }
 
 }

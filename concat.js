@@ -21,7 +21,7 @@ async function concatFilesInDirectory(directoryPath, outputFilePath) {
   }
 }
 
-const directoryPath = './dist/mpage-developer-component-template/'; // Replace with your directory path
-const outputFilePath = './dist/mpage-developer-component-template/mpage-developer-component-template.js'; // Replace with your desired output file path
+const directoryPath = './dist/test-angular/'; // Replace with your directory path
+const outputFilePath = './dist/test-angular/test-angular.js'; // Replace with your desired output file path
 
 concatFilesInDirectory(directoryPath, outputFilePath);

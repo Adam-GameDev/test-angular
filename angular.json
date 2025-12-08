@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mpage-developer-component-template": {
+    "test-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -39,7 +39,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/mpage-developer-component-template",
+            "outputPath": "dist/test-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [],
@@ -91,10 +91,10 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "mpage-developer-component-template:build:production"
+              "buildTarget": "test-angular:build:production"
             },
             "development": {
-              "buildTarget": "mpage-developer-component-template:build:development"
+              "buildTarget": "test-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
